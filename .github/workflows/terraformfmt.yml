@@ -17,7 +17,7 @@ jobs:
         uses: dflook/terraform-fmt@v1.24.0
 
         with:
-          path: my-terraform-config
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
