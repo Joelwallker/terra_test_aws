@@ -3,7 +3,7 @@ name: Fix terraform file formatting
 on:
   pull_request:
     branches: 
-     -main 
+      - main  
 
 jobs:
   format:
