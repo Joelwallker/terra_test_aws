@@ -4,7 +4,7 @@
 #Build by Wh1teHerc0g
 #------------------------------------------------
 
-provider "aws"{}
+provider "aws" {}
 
 resource "aws_security_group" "wh_sequrity_group" {
   name        = "wh_sequrity_group"
@@ -18,7 +18,7 @@ resource "aws_security_group" "wh_sequrity_group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-   ingress {
+  ingress {
     description = "TLS from VPC"
     from_port   = 443
     to_port     = 443
