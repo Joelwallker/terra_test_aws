@@ -1,9 +1,9 @@
 name: Fix terraform file formatting
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    branches: 
+     -main 
 
 jobs:
   format:
