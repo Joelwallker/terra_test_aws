@@ -21,8 +21,6 @@ jobs:
      
     - name: Terraform Format
       id: fmt
-      run: terraform fmt -check
+      run: terrafrom fmt -recursive -check 
     
-    - name: Terraform_Format_correct
-      id: fmt_check
-      run: terraform fmt 
+ 
